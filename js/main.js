@@ -13,7 +13,7 @@ $(document).ready(function() {
 function init() {
     document.getElementById('titleWeb').innerHTML = CONFIG.titleWeb
     $('#title').text(CONFIG.title)
-    $('#desc').text(CONFIG.desc)
+    $('#desc').html(CONFIG.desc)
     $('#yes').text(CONFIG.btnYes)
     $('#no').text(CONFIG.btnNo)
 
