@@ -13,7 +13,7 @@ $(document).ready(function() {
 function init() {
     document.getElementById('titleWeb').innerHTML = CONFIG.titleWeb
     $('#title').text(CONFIG.title)
-    $('#desc').append(CONFIG.desc)
+    $('#desc').text(CONFIG.desc)
     $('#yes').text(CONFIG.btnYes)
     $('#no').text(CONFIG.btnNo)
 
@@ -31,7 +31,7 @@ function firstQuestion() {
     $('.content').hide();
     Swal.fire({
         title: CONFIG.introTitle,
-        text: CONFIG.introDesc,
+        html: CONFIG.introDesc,
         imageUrl: 'img/logi.gif',
         imageWidth: 300,
         imageHeight: 300,
